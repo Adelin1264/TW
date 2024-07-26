@@ -1,0 +1,100 @@
+body {
+    background-image: url("bb_logo.jpg");
+    background-repeat: repeat-y;
+    background-size: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-size: cover;
+    }
+}
+
+#titlu_site{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color: cyan;
+    text-align: center;
+}
+
+.meniu{
+    background-color: lightgreen;
+}
+.meniu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .meniu ul li {
+    display: inline-block;
+    position: relative; 
+  }
+  
+  .meniu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .meniu ul li:hover {
+    background-color: darkgreen;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background-color: #f0f0f0;
+}
+
+#login-form {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#login-form button:hover {
+    background-color: #45a049;
+}

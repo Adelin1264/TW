@@ -1,0 +1,146 @@
+body {
+  background-image: url("bb_logo.jpg");
+  background-repeat: repeat-y;
+  background-size: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+      background-size: cover;
+  }
+}
+
+#titlu_site {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  color: cyan;
+  text-align: center;
+}
+
+.meniu {
+  background-color: lightgreen;
+}
+
+.meniu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.meniu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.meniu ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.meniu ul li:hover {
+  background-color: darkgreen;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#animation-container {
+  display: grid;
+  grid-template-columns:auto 1fr 1fr; 
+  justify-content: center; 
+  max-height: 50vh;
+  margin: 0 auto;
+  background-color: rgb(0, 128, 0, 0.5);
+}
+
+#walter-white {
+  color: white;
+  font-weight: bold;
+}
+
+#animation-container img {
+  max-width: 100%;
+  max-height: 70%;
+}
+
+#animation-container p {
+    display: flex;
+    font-weight: bold;
+    justify-self: center;
+    padding: 15%;
+    color: whitesmoke;
+    font-size: large;
+}
+
+.word {
+  opacity: 0;
+  color: white;
+  font-size: 34px; 
+}
+
+
+#say {
+  animation: fade-in-out 6s infinite;
+}
+
+#my {
+  animation: fade-in-out 6s infinite;
+  animation-delay: 2s;
+}
+
+#name {
+  animation: fade-in-out 6s infinite;
+  animation-delay: 4s;
+}
+
+@keyframes fade-in-out {
+  0% { opacity: 0; }
+  33.33% { opacity: 1; }
+  66.66% { opacity: 1; } 
+  100% { opacity: 0; }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.imagine img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.descriere p {
+  font-size: 16px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.descriere h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.imagine img:hover {
+  transform: scale(0.8);
+  opacity: 0.5;
+}

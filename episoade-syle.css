@@ -1,0 +1,140 @@
+body {
+    background-image: url("bb_logo.jpg");
+    background-repeat: repeat-y;
+    background-size: auto;
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1600px) {
+    body {
+        background-size: cover;
+    }
+
+}
+
+
+#titlu_site{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color: cyan;
+    text-align: center;
+}
+
+.meniu{
+    background-color: lightgreen;
+}
+.meniu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .meniu ul li {
+    display: inline-block;
+    position: relative; 
+  }
+  
+  .meniu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .meniu ul li:hover {
+    background-color: darkgreen;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.sezon-tabel {
+    display: none;
+}
+
+.sezon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sezon-titlu {
+    cursor: pointer;
+    font-size: 3em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:white;
+    font-style: oblique;
+}
+
+.sezon:hover{
+    background-color: darkgreen;
+}
+
+.episoade {
+    display: none;
+}
+
+
+#sezon1-tabel:checked ~ .episoade {
+    display: block;
+    background-image: url(sez1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+#sezon2-tabel:checked ~ .episoade {
+    display: block;
+    background-image: url(sez2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+#sezon3-tabel:checked ~ .episoade {
+    display: block;
+    background-image: url(sez3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+#sezon4-tabel:checked ~ .episoade {
+    display: block;
+    background-image: url(sez4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+#sezon5-tabel:checked ~ .episoade {
+    display: block;
+    background-image: url(sez5.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.episod {
+    padding: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+}

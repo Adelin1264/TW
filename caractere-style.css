@@ -1,0 +1,121 @@
+body {
+    background-image: url("bb_logo.jpg");
+    background-repeat: repeat-y;
+    background-size: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-size: cover;
+    }
+}
+
+#titlu_site{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color: cyan;
+    text-align: center;
+}
+
+.meniu{
+    background-color: lightgreen;
+}
+.meniu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .meniu ul li {
+    display: inline-block;
+    position: relative; 
+  }
+  
+  .meniu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .meniu ul li:hover {
+    background-color: darkgreen;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .imagine_caractere {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50vh;
+    background-color: rgb(0, 128, 0, 0.5);
+}
+
+.imagine_caractere img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.3s ease;
+}
+
+.imagine_caractere img:hover {
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+.imagine_caractere p:nth-of-type(1){
+    display: flex;
+    font-weight: bold;
+    justify-self: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: whitesmoke;
+    font-size: large;
+}
+
+.personaje {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+.personaj {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.personaj img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.personaj h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.personaj p {
+    font-size: 1rem;
+    color: whitesmoke;
+}
